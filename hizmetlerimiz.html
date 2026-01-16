@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vecta İnşaat Antalya - Masa iskele sistemleri, modüler kalıp sistemleri, dış cephe iskelesi, iskele kiralama, beton kalıp, çelik iskele ve projelendirme hizmetleri. CE sertifikalı ürünler.">
+    <meta name="keywords" content="masa iskele Antalya, modüler kalıp, çelik iskele, dış cephe iskelesi, iskele kiralama Antalya, beton kalıp sistemleri, iskele satış, kalıp satış, iskele montaj, kalıp montaj, inşaat iskelesi, şantiye iskelesi, çatı iskelesi, iskele projelendirme, kalıp projelendirme, iskele mühendislik, Antalya inşaat malzemeleri, yapı iskelesi, alüminyum iskele, tubular iskele">
+    <title>Hizmetlerimiz - Masa İskele, Modüler Kalıp ve Projelendirme | Vecta İnşaat Antalya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            opacity: 0.8;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 6rem 2rem 3rem;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-detail {
+            margin-bottom: 5rem;
+            scroll-margin-top: 100px;
+        }
+
+        .service-detail h2 {
+            color: #1e3c72;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #ff6b35;
+            padding-left: 1rem;
+        }
+
+        .service-detail h3 {
+            color: #2a5298;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-detail p {
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.9;
+            font-size: 1.05rem;
+        }
+
+        .service-detail ul {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .service-detail ul li {
+            color: #555;
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .service-detail ul li strong {
+            color: #1e3c72;
+        }
+
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid #ff6b35;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+
+        .highlight-box h4 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .benefit-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ff6b35;
+        }
+
+        .benefit-card h5 {
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: #ff6b35;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-light {
+            background: white;
+            color: #1e3c72;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #ff6b35;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b35;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .service-detail h2 {
+                font-size: 1.8rem;
+            }
+
+            .nav-menu {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">VECTA İNŞAAT</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h1>Hizmetlerimiz</h1>
+        <p>Antalya'da masa iskele sistemleri, modüler kalıp çözümleri ve profesyonel mühendislik projelendirme hizmetleri ile inşaat projelerinize değer katıyoruz</p>
+    </section>
+
+    <section class="section">
+        <article class="service-detail" id="masa-iskele">
+            <h2>Masa İskele Sistemleri - Antalya'da Kaliteli ve Güvenli Çözümler</h2>
+            
+            <p>Vecta İnşaat olarak Antalya ve çevre illerde <strong>masa iskele sistemleri</strong> üretimi, satışı ve kiralama hizmetleri sunuyoruz. Masa iskele, modern inşaat projelerinde beton döküm işlemleri için kullanılan, yüksek taşıma kapasiteli ve hızlı montaj avantajı sunan profesyonel bir iskele sistemidir.</p>
+
+            <h3>Masa İskele Nedir? Nerelerde Kullanılır?</h3>
+            <p><strong>Masa iskele</strong> (diğer adıyla <strong>tavan iskelesi</strong> veya <strong>döşeme iskelesi</strong>), beton döküm işlemlerinde kullanılan, tabla ve dikey destek sistemlerinden oluşan modüler bir yapı sistemidir. Özellikle yüksek tavanlı binalar, köprüler, viyadükler, tüneller ve ticari yapılarda tercih edilir.</p>
+
+            <div class="highlight-box">
+                <h4>Masa İskele Kullanım Alanları</h4>
+                <ul>
+                    <li><strong>Konut İnşaatı:</strong> Çok katlı apartman ve rezidans projelerinde döşeme dökümü</li>
+                    <li><strong>Ticari Yapılar:</strong> Alışveriş merkezleri, ofis binaları, otel projeleri</li>
+                    <li><strong>Endüstriyel Tesisler:</strong> Fabrika, depo ve lojistik merkezi yapımı</li>
+                    <li><strong>Altyapı Projeleri:</strong> Köprü, viyadük, tünel ve alt geçit inşaatları</li>
+                    <li><strong>Restorasyon İşleri:</strong> Tarihi yapıların onarım ve güçlendirme çalışmaları</li>
+                </ul>
+            </div>
+
+            <h3>Masa İskele Sistemlerinin Avantajları</h3>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon">⚡</div>
+                    <h5>Hızlı Montaj</h5>
+                    <p>Modüler yapısı sayesinde kısa sürede kurulum</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">💪</div>
+                    <h5>Yüksek Dayanıklılık</h5>
+                    <p>Ağır beton yüklerini güvenle taşır</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🔄</div>
+                    <h5>Tekrar Kullanılabilir</h5>
+                    <p>Uzun ömürlü ve ekonomik çözüm</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🛡️</div>
+                    <h5>Güvenli Çalışma</h5>
+                    <p>CE sertifikalı ve TSE standartlarına uygun</p>
+                </div>
+            </div>
+
+            <h3>Vecta İnşaat Masa İskele Özellikleri</h3>
+            <p>Firmamızda üretilen ve satışa sunulan <strong>masa iskele sistemleri</strong> aşağıdaki özelliklere sahiptir:</p>
+            <ul>
+                <li><strong>Kaliteli Malzeme:</strong> Yüksek mukavemetli çelik profiller kullanılır</li>
+                <li><strong>Modüler Yapı:</strong> Farklı alan ve yüksekliklere uygun modüller</li>
+                <li><strong>Kolay Montaj:</strong> Az işçilik ile hızlı kurulum imkanı</li>
+                <li><strong>Ayarlanabilir Yükseklik:</strong> Değişken tavan yüksekliklerine uyum</li>
+                <li><strong>Güvenlik Ekipmanları:</strong> Korkuluk ve güvenlik donanımları dahil</li>
+                <li><strong>Uzun Ömür:</strong> Galvaniz kaplama ile pas ve korozyon koruması</li>
+            </ul>
+
+            <p>Antalya bölgesinde <strong>masa iskele kiralama</strong> ve satış hizmetimizden yararlanabilir, projeleriniz için en uygun çözümü bizimle bulabilirsiniz.</p>
+        </article>
+
+        <article class="service-detail" id="modular-kalip">
+            <h2>Modüler Kalıp Sistemleri - Hızlı ve Esnek Beton Kalıp Çözümleri</h2>
+            
+            <p><strong>Modüler kalıp sistemleri</strong>, beton dökümünde kullanılan, standart modüllerden oluşan ve tekrar kullanılabilen profesyonel kalıplama sistemleridir. Vecta İnşaat olarak Antalya'da <strong>modüler kalıp satışı, kiralama ve montaj</strong> hizmetleri sunuyoruz.</p>
+
+            <h3>Modüler Kalıp Sistemleri Nedir?</h3>
+            <p><strong>Modüler kalıp</strong> (diğer adlarıyla <strong>panel kalıp</strong>, <strong>sistem kalıp</strong> veya <strong>modern kalıp</strong>), beton yapıların inşasında kullanılan, standart boyutlardaki panellerden oluşan ve birbirine bağlanarak farklı formlar oluşturabilen kalıp sistemidir. Geleneksel ahşap kalıplara göre çok daha hızlı, ekonomik ve kaliteli sonuçlar verir.</p>
+
+            <div class="highlight-box">
+                <h4>Modüler Kalıp Türlerimiz</h4>
+                <ul>
+                    <li><strong>Duvar Kalıbı:</strong> Betonarme duvar imalatı için panel sistemler</li>
+                    <li><strong>Kolon Kalıbı:</strong> Farklı kesitlerdeki kolonlar için özel kalıplar</li>
+                    <li><strong>Kiriş Kalıbı:</strong> Döşeme kirişleri için yatay kalıplama sistemleri</li>
+                    <li><strong>Merdiven Kalıbı:</strong> Betonarme merdiven imalatı için özel çözümler</li>
+                    <li><strong>Tünel Kalıbı:</strong> Duvar ve tavan birlikte dökümü için sistem kalıplar</li>
+                </ul>
+            </div>
+
+            <h3>Modüler Kalıp Sistemlerinin Avantajları</h3>
+            <p>Geleneksel ahşap kalıplara kıyasla <strong>modüler kalıp sistemleri</strong> birçok avantaj sunar:</p>
+            <ul>
+                <li><strong>Hızlı Uygulama:</strong> Standart modüller sayesinde montaj süresi kısalır</li>
+                <li><strong>İşçilik Tasarrufu:</strong> Az sayıda işçi ile kurulum yapılabilir</li>
+                <li><strong>Yüzey Kalitesi:</strong> Düzgün ve pürüzsüz beton yüzey elde edilir</li>
+                <li><strong>Esneklik:</strong> Farklı proje tasarımlarına kolayca uyum sağlar</li>
+                <li><strong>Dayanıklılık:</strong> Yüzlerce kez kullanılabilir, amortisman süresi kısadır</li>
+                <li><strong>Güvenlik:</strong> Sağlam bağlantılar ve entegre güvenlik sistemleri</li>
+                <li><strong>Ekonomiklik:</strong> Uzun vadede maliyet avantajı sağlar</li>
+            </ul>
+
+            <h3>Antalya'da Modüler Kalıp Kiralama ve Satış</h3>
+            <p>Vecta İnşaat olarak Antalya ve çevre illerdeki müşterilerimize <strong>modüler kalıp sistemleri kiralama</strong> ve satış hizmetleri sunuyoruz. İnşaat projelerinizin ihtiyaçlarına göre kısa veya uzun süreli kiralama seçeneklerimiz mevcuttur. Ayrıca <strong>kalıp montaj ve söküm</strong> hizmetlerimizden de faydalanabilirsiniz.</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon">📦</div>
+                    <h5>Geniş Ürün Yelpazesi</h5>
+                    <p>Her proje için uygun kalıp seçenekleri</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🚚</div>
+                    <h5>Hızlı Teslimat</h5>
+                    <p>Antalya içi aynı gün teslimat</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🔧</div>
+                    <h5>Montaj Desteği</h5>
+                    <p>Uzman ekip ile kurulum hizmeti</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">💰</div>
+                    <h5>Esnek Ödeme</h5>
+                    <p>Uygun kiralama ve satın alma şartları</p>
+                </div>
+            </div>
+
+            <p>Beton kalıp sistemleri, sistem kalıp, panel kalıp ve modüler kalıp ihtiyaçlarınız için Vecta İnşaat'ın Antalya'daki deneyiminden faydalanın.</p>
+        </article>
+
+        <article class="service-detail" id="projelendirme">
+            <h2>Projelendirme ve Mühendislik Hizmetleri</h2>
+            
+            <p>Vecta İnşaat olarak, sadece <strong>iskele ve kalıp sistemleri satışı</strong> yapmıyor, aynı zamanda deneyimli mühendis kadromuzla <strong>profesyonel projelendirme hizmetleri</strong> de sunuyoruz. İnşaat projeleriniz için güvenli ve ekonomik iskele-kalıp çözümleri üretiyoruz.</p>
+
+            <h3>Projelendirme Hizmetlerimiz</h3>
+            <p>Statik projenizi ve inşaat planlarınızı bizimle paylaşın, size özel <strong>iskele projelendirme</strong> ve <strong>kalıp projelendirme</strong> çözümleri geliştirelim:</p>
+
+            <div class="highlight-box">
+                <h4>Sunduğumuz Projelendirme Hizmetleri</h4>
+                <ul>
+                    <li><strong>Masa İskele Projelendirme:</strong> Döşeme yükleri hesaplaması ve iskele planlaması</li>
+                    <li><strong>Modüler Kalıp Projelendirme:</strong> Duvar, kolon ve kiriş kalıp detayları</li>
+                    <li><strong>Dış Cephe İskelesi Projelendirme:</strong> Güvenli çalışma platformu tasarımı</li>
+                    <li><strong>Özel Projeler:</strong> Atipik yapılar için özel iskele ve kalıp çözümleri</li>
+                    <li><strong>Statik Hesaplamalar:</strong> Yük analizleri ve güvenlik hesaplamaları</li>
+                    <li><strong>Montaj Planları:</strong> Detaylı montaj çizimleri ve iş programı</li>
+                </ul>
+            </div>
+
+            <h3>Projelendirme Süreci Nasıl İşler?</h3>
+            <p>Vecta İnşaat ile çalışmanız çok kolay:</p>
+            <ul>
+                <li><strong>1. İletişim:</strong> Bize telefon, e-posta veya web sitesi üzerinden ulaşın</li>
+                <li><strong>2. Proje Paylaşımı:</strong> Statik projenizi, mimari planlarınızı ve varsa özel taleplerinizi iletin</li>
+                <li><strong>3. Analiz ve Teklif:</strong> Mühendislerimiz projenizi inceler ve size en uygun çözümü sunar</li>
+                <li><strong>4. Projelendirme:</strong> Onayınızın ardından detaylı iskele/kalıp projeleri hazırlanır</li>
+                <li><strong>5. Malzeme Temini:</strong> Projeye uygun iskele ve kalıp malzemelerini tedarik ederiz</li>
+                <li><strong>6. Montaj Desteği:</strong> İsterseniz montaj ekibimiz sahada kurulum yapar</li>
+            </ul>
+
+            <h3>Neden Vecta İnşaat Projelendirme?</h3>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon">👨‍🔬</div>
+                    <h5>Uzman Mühendisler</h5>
+                    <p>İnşaat mühendisleri ve teknik ekip</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">📐</div>
+                    <h5>Detaylı Çözümler</h5>
+                    <p>AutoCAD ve 3D modelleme ile proje</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">✅</div>
+                    <h5>Standartlara Uygun</h5>
+                    <p>TS EN, CE ve iş güvenliği normlarına uygun</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">💡</div>
+                    <h5>Ekonomik Çözüm</h5>
+                    <p>Maliyet optimizasyonu ve verimlilik</p>
+                </div>
+            </div>
+
+            <p>İnşaat projelerinizde <strong>iskele mühendisliği</strong> ve <strong>kalıp mühendisliği</strong> desteği almak için Vecta İnşaat'ı tercih edin. Antalya'da projelendirme hizmetleri konusunda güvenilir iş ortağınız.</p>
+        </article>
+    </section>
+
+    <section class="cta-section">
+        <h2>Hizmetlerimiz Hakkında Detaylı Bilgi Alın</h2>
+        <p>Masa iskele, modüler kalıp ve projelendirme hizmetlerimiz için bizimle iletişime geçin</p>
+        <a href="iletisim.html" class="btn btn-light">İletişim Sayfası</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Vecta İnşaat</h3>
+                <p>Antalya'da masa iskele, modüler kalıp sistemleri ve projelendirme hizmetleri</p>
+                <p>İnşaat sektöründe güvenilir çözüm ortağınız</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Menü</h3>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                <a href="iletisim.html">İletişim</a>
+            </div>
+            <div class="footer-section">
+                <h3>Hizmetlerimiz</h3>
+                <a href="#masa-iskele">Masa İskele Sistemleri</a>
+                <a href="#modular-kalip">Modüler Kalıp Sistemleri</a>
+                <a href="#projelendirme">Projelendirme</a>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p>📞 0507 951 42 68</p>
+                <p>✉️ info@vecta.com.tr</p>
+                <p>📍 Antalya, Türkiye</p>
+                <p>🌐 www.vecta.com.tr</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vecta İnşaat. Tüm hakları saklıdır.</p>
+            <p>Antalya Masa İskele | Modüler Kalıp Sistemleri | İskele Projelendirme | İnşaat Malzemeleri</p>
+        </div>
+    </footer>
+</body>
+</html>
