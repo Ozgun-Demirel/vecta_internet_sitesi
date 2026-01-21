@@ -302,14 +302,36 @@
                 height: 300px;
             }
         }
+        /* Logo ve yazıyı yan yana getiren kapsayıcı */
+.logo-container {
+                display: flex;
+                align-items: center; /* Dikeyde ortalar */
+                gap: 15px;           /* Resim ve yazı arasındaki boşluk */
+                text-decoration: none;
+            }
+            
+            /* Logonun boyutunu kontrol etmek için */
+            .logo-img {
+                height: 40px;        /* Navigasyon yüksekliğine göre ayarlayabilirsiniz */
+                width: auto;
+            }
+            
+            /* Yazının stilini korumak veya değiştirmek için */
+            .logo-text {
+                font-size: 1.8rem;
+                font-weight: bold;
+                letter-spacing: 1px;
+                color: white;
+                white-space: nowrap; /* Yazının alt satıra kaymasını engeller */
+            }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="nav-container">
-            <div class="logo">
-                <link rel="icon" type="image/png" href="logo_1024.png">
-                <div class="logo">VECTA İNŞAAT</div>
+            <div class="logo-container">
+                <img src="logo_1024.png" alt="Vecta Logo" class="logo-img">
+                <span class="logo-text">VECTA İNŞAAT</span>
             </div>
             </div>
             <nav>
