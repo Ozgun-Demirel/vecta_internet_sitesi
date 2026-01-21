@@ -43,9 +43,20 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
             font-size: 1.8rem;
             font-weight: bold;
             letter-spacing: 1px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
         }
 
         .nav-menu {
@@ -301,13 +312,24 @@
             .map-container {
                 height: 300px;
             }
+
+            .logo {
+                font-size: 1.4rem;
+            }
+
+            .logo img {
+                height: 32px;
+            }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="nav-container">
-            <div class="logo">VECTA İNŞAAT</div>
+            <a href="index.html" class="logo">
+                <img src="logo_sekme.png" alt="Vecta İnşaat Logo">
+                <span>VECTA İNŞAAT</span>
+            </a>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Ana Sayfa</a></li>
