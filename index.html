@@ -6,7 +6,7 @@
     <meta name="description" content="Vecta İnşaat - Antalya'da masa iskele, modüler kalıp sistemleri ve profesyonel projelendirme hizmetleri. İnşaat sektöründe güvenilir çözüm ortağınız.">
     <meta name="keywords" content="masa iskele Antalya, modüler kalıp sistemleri, iskele kiralama, inşaat kalıpları, dış cephe iskelesi, iskele projelendirme, Antalya inşaat, kalıp sistemleri satış">
     <meta name="author" content="Vecta İnşaat">
-    <link rel="icon" type="image/png" href="logo_sekme.png" sizes="1024x1024">
+    <link rel="icon" type="image/png" href="logo_sekme.png" sizes="48x48">
     <title>Vecta İnşaat Antalya | Masa İskele, Modüler Kalıp Sistemleri ve Projelendirme</title>
     <style>
         * {
@@ -42,9 +42,20 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
             font-size: 1.8rem;
             font-weight: bold;
             letter-spacing: 1px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
         }
 
         .nav-menu {
@@ -294,13 +305,24 @@
             .section-title {
                 font-size: 2rem;
             }
+
+            .logo {
+                font-size: 1.4rem;
+            }
+
+            .logo img {
+                height: 32px;
+            }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="nav-container">
-            <div class="logo">VECTA İNŞAAT</div>
+            <a href="index.html" class="logo">
+                <img src="logo_sekme.png" alt="Vecta İnşaat Logo">
+                <span>VECTA İNŞAAT</span>
+            </a>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Ana Sayfa</a></li>
@@ -325,7 +347,7 @@
         
         <div class="services-preview">
             <div class="service-card">
-                <div class="icon">🏗️</div>
+                <div class="icon">🗿️</div>
                 <h3>Masa İskele Sistemleri</h3>
                 <p>Modern inşaat projeleriniz için yüksek kaliteli masa iskele sistemleri üretimi ve satışı. Güvenli, dayanıklı ve kolay montajlı çözümler sunuyoruz.</p>
             </div>
@@ -354,7 +376,7 @@
             
             <div class="features-grid">
                 <div class="feature-box">
-                    <div class="feature-icon">✓</div>
+                    <div class="feature-icon">✔</div>
                     <h4>Kaliteli Üretim</h4>
                     <p>Yüksek standartlarda üretim</p>
                 </div>
