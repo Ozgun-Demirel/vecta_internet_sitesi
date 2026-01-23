@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vecta İnşaat İletişim - Antalya'da masa iskele, modüler kalıp ve projelendirme hizmetleri için bize ulaşın. Muratpaşa, Kepez, Konyaaltı, Aksu ve Döşemealtı bölgelerinde hizmet veriyoruz. Telefon: 0507 951 42 68">
-    <meta name="keywords" content="Vecta İnşaat iletişim, Antalya iskele firması, Antalya masa iskele, Antalya modüler kalıp, iskele firması Muratpaşa, iskele firması Kepez, iskele firması Konyaaltı, Antalya inşaat malzemeleri firma, iskele kiralama Antalya iletişim, kalıp satış Antalya telefon">
+    <meta name="description" content="Vecta İnşaat İletişim - Antalya'da masa iskele, modüler kalıp ve inşaat projelendirme hizmetleri için bize ulaşın. Tel: 0507 951 42 68. Muratpaşa, Kepez, Konyaaltı, Aksu ve tüm Antalya genelinde hizmet.">
+    <meta name="keywords" content="Vecta İnşaat iletişim, Antalya iskele firması telefon, masa iskele Antalya iletişim, modüler kalıp Antalya telefon, inşaat firması Antalya adres, iskele kiralama iletişim, Antalya inşaat malzemeleri firma">
     <meta name="geo.region" content="TR-07">
     <meta name="geo.placename" content="Antalya">
+    <meta property="og:title" content="İletişim - Vecta İnşaat Antalya | Masa İskele & Kalıp Sistemleri">
+    <meta property="og:description" content="Antalya'da inşaat hizmetleri için Vecta İnşaat ile iletişime geçin. Ücretsiz keşif ve teklif.">
     <link rel="icon" type="image/png" href="logo_sekme.png">
-    <title>İletişim - Vecta İnşaat Antalya | Masa İskele ve Modüler Kalıp Sistemleri</title>
+    <link rel="canonical" href="https://www.vecta.com.tr/iletisim.html">
+    <title>İletişim - Antalya İnşaat Firması | Vecta İnşaat Telefon & Adres</title>
     <style>
         * {
             margin: 0;
@@ -16,25 +19,35 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --primary-blue: #1e3c72;
+            --secondary-blue: #2a5298;
+            --accent-orange: #ff6b35;
+            --dark-gray: #1a1a1a;
+            --light-gray: #f8f9fa;
+            --text-dark: #333;
+            --text-light: #666;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            line-height: 1.8;
+            color: var(--text-dark);
         }
 
         .header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
             color: white;
             padding: 1rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -45,267 +58,339 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 0.8rem;
-            font-size: 1.8rem;
-            font-weight: bold;
-            letter-spacing: 1px;
+            gap: 1rem;
+            font-size: 1.9rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
             text-decoration: none;
             color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
         }
 
         .logo img {
-            height: 50px;
+            height: 55px;
             width: auto;
             object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
         }
 
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .nav-menu a {
             color: white;
             text-decoration: none;
-            transition: opacity 0.3s;
+            transition: all 0.3s ease;
             font-weight: 500;
+            font-size: 1.05rem;
+            position: relative;
+            padding: 0.5rem 0;
         }
 
-        .nav-menu a:hover {
-            opacity: 0.8;
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-orange);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
         }
 
         .page-header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(42, 82, 152, 0.95) 100%), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: white;
-            padding: 6rem 2rem 3rem;
+            padding: 8rem 2rem 4rem;
             margin-top: 70px;
             text-align: center;
         }
 
         .page-header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
         }
 
         .page-header p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             max-width: 800px;
             margin: 0 auto;
+            text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
         }
 
         .section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
+            padding: 5rem 2rem;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 2.5rem;
             margin-bottom: 4rem;
         }
 
         .contact-card {
             background: white;
-            padding: 2.5rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
             text-align: center;
-            transition: transform 0.3s;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
 
         .contact-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border-color: var(--accent-orange);
         }
 
         .contact-icon {
-            font-size: 3rem;
-            color: #ff6b35;
-            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            color: var(--accent-orange);
+            margin-bottom: 1.5rem;
         }
 
         .contact-card h3 {
-            color: #1e3c72;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            font-weight: 600;
         }
 
         .contact-card p {
-            color: #555;
+            color: var(--text-dark);
             line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
         }
 
         .contact-card a {
-            color: #2a5298;
+            color: var(--secondary-blue);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            transition: color 0.3s ease;
         }
 
         .contact-card a:hover {
-            color: #ff6b35;
+            color: var(--accent-orange);
         }
 
         .map-section {
             margin: 4rem 0;
-            background: #f8f9fa;
-            padding: 3rem 2rem;
-            border-radius: 10px;
+            background: var(--light-gray);
+            padding: 4rem 2rem;
+            border-radius: 15px;
         }
 
         .map-section h2 {
-            color: #1e3c72;
+            color: var(--primary-blue);
             text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            font-size: 2.8rem;
+            font-weight: 700;
         }
 
         .map-container {
             width: 100%;
-            height: 400px;
-            border-radius: 10px;
+            height: 450px;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
 
         .service-areas {
             background: white;
-            padding: 3rem 2rem;
-            border-radius: 10px;
-            margin-top: 3rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 4rem 2.5rem;
+            border-radius: 15px;
+            margin-top: 4rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
         }
 
         .service-areas h2 {
-            color: #1e3c72;
+            color: var(--primary-blue);
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 2.8rem;
+            font-weight: 700;
         }
 
-        .service-areas p {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
+        .service-areas > p {
+            color: var(--text-dark);
+            line-height: 1.9;
+            margin-bottom: 2rem;
             text-align: center;
+            font-size: 1.15rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .areas-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
         }
 
         .area-item {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 8px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            padding: 2rem;
+            border-radius: 12px;
             text-align: center;
-            border-left: 4px solid #ff6b35;
+            transition: all 0.3s ease;
+            color: white;
+            cursor: pointer;
+        }
+
+        .area-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(30, 60, 114, 0.3);
         }
 
         .area-item h4 {
-            color: #1e3c72;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.5rem;
+        }
+
+        .area-item p {
+            opacity: 0.95;
         }
 
         .working-hours {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
             color: white;
-            padding: 3rem 2rem;
-            border-radius: 10px;
-            margin-top: 3rem;
+            padding: 4rem 2.5rem;
+            border-radius: 15px;
+            margin-top: 4rem;
             text-align: center;
         }
 
         .working-hours h2 {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
+            font-size: 2.8rem;
         }
 
         .hours-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            max-width: 800px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
         .hours-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1.5rem;
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .hours-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-5px);
         }
 
         .hours-item h4 {
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .hours-item p {
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
         .seo-text {
-            background: #f8f9fa;
-            padding: 3rem 2rem;
-            margin-top: 3rem;
-            border-radius: 10px;
+            background: var(--light-gray);
+            padding: 4rem 2.5rem;
+            margin-top: 4rem;
+            border-radius: 15px;
         }
 
         .seo-text h2 {
-            color: #1e3c72;
-            margin-bottom: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: 700;
         }
 
         .seo-text p {
-            color: #555;
+            color: var(--text-dark);
             line-height: 1.9;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
+            font-size: 1.1rem;
         }
 
         .footer {
-            background: #1a1a1a;
+            background: var(--dark-gray);
             color: white;
-            padding: 3rem 2rem;
+            padding: 4rem 2rem 2rem;
             margin-top: 4rem;
         }
 
         .footer-content {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
         }
 
         .footer-section h3 {
-            margin-bottom: 1rem;
-            color: #ff6b35;
+            margin-bottom: 1.5rem;
+            color: var(--accent-orange);
+            font-size: 1.4rem;
+            font-weight: 600;
         }
 
         .footer-section p, .footer-section a {
             color: #ccc;
             text-decoration: none;
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
+            transition: color 0.3s ease;
         }
 
         .footer-section a:hover {
-            color: #ff6b35;
+            color: var(--accent-orange);
         }
 
         .footer-bottom {
             text-align: center;
-            margin-top: 2rem;
+            margin-top: 3rem;
             padding-top: 2rem;
             border-top: 1px solid #333;
+            color: #999;
         }
 
         @media (max-width: 768px) {
             .page-header h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
 
             .nav-menu {
-                gap: 1rem;
+                gap: 1.5rem;
                 flex-wrap: wrap;
             }
 
@@ -314,20 +399,78 @@
             }
 
             .logo {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
             }
 
             .logo img {
-                height: 32px;
+                height: 40px;
             }
         }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Vecta İnşaat",
+      "image": "https://www.vecta.com.tr/logo_sekme.png",
+      "@id": "https://www.vecta.com.tr",
+      "url": "https://www.vecta.com.tr",
+      "telephone": "+905079514268",
+      "email": "vectainsaat@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Antalya",
+        "addressLocality": "Antalya",
+        "addressRegion": "Antalya",
+        "postalCode": "07000",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.8968908,
+        "longitude": 30.5568502
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "15:00"
+        }
+      ],
+      "priceRange": "$$",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Antalya"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Muratpaşa"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Kepez"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Konyaaltı"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header class="header">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="logo_sekme.png" alt="Vecta İnşaat Logo">
+                <img src="logo_sekme.png" alt="Vecta İnşaat Antalya Logo">
                 <span>VECTA İNŞAAT</span>
             </a>
             <nav>
@@ -341,31 +484,31 @@
     </header>
 
     <section class="page-header">
-        <h1>İletişim</h1>
-        <p>Antalya'da masa iskele, modüler kalıp ve projelendirme hizmetleri için bize ulaşın</p>
+        <h1>Bize Ulaşın</h1>
+        <p>Antalya'da masa iskele, modüler kalıp ve inşaat projelendirme hizmetleri için profesyonel ekibimizle iletişime geçin</p>
     </section>
 
     <section class="section">
         <div class="contact-grid">
             <div class="contact-card">
                 <div class="contact-icon">📞</div>
-                <h3>Telefon</h3>
+                <h3>Telefon İletişim</h3>
                 <p><a href="tel:+905079514268">0507 951 42 68</a></p>
-                <p>Hemen arayın</p>
+                <p>Hemen arayın, ücretsiz danışmanlık alın</p>
             </div>
 
             <div class="contact-card">
                 <div class="contact-icon">✉️</div>
                 <h3>E-posta</h3>
                 <p><a href="mailto:vectainsaat@gmail.com">vectainsaat@gmail.com</a></p>
-                <p>7/24 e-posta gönderin</p>
+                <p>7/24 e-posta ile ulaşın</p>
             </div>
 
             <div class="contact-card">
                 <div class="contact-icon">🌐</div>
                 <h3>Web Sitesi</h3>
                 <p><a href="https://www.vecta.com.tr">www.vecta.com.tr</a></p>
-                <p>Online bilgi alın</p>
+                <p>Online bilgi ve teklif alın</p>
             </div>
 
             <div class="contact-card">
@@ -377,7 +520,7 @@
         </div>
 
         <div class="map-section">
-            <h2>Konum</h2>
+            <h2>Antalya'daki Konumumuz</h2>
             <div class="map-container">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202396.48657781847!2d30.556850199999998!3d36.8968908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c39aaeddadadc1%3A0x96341e8a5b22d506!2sAntalya!5e0!3m2!1str!2str!4v1234567890123!5m2!1str!2str" 
@@ -385,23 +528,24 @@
                     height="100%" 
                     style="border:0;" 
                     allowfullscreen="" 
-                    loading="lazy">
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </div>
 
         <div class="service-areas">
-            <h2>Antalya'da Hizmet Verdiğimiz Bölgeler</h2>
-            <p>Vecta İnşaat olarak Antalya'nın tüm merkez ilçelerinde <strong>masa iskele</strong>, <strong>modüler kalıp sistemleri</strong>, <strong>iskele kiralama</strong>, <strong>kalıp kiralama</strong> ve <strong>projelendirme hizmetleri</strong> sunuyoruz.</p>
+            <h2>Antalya Genelinde İnşaat Hizmet Bölgelerimiz</h2>
+            <p>Vecta İnşaat olarak Antalya'nın tüm merkez ilçelerinde ve çevre bölgelerinde <strong>masa iskele</strong>, <strong>modüler kalıp sistemleri</strong>, <strong>iskele kiralama</strong>, <strong>kalıp kiralama</strong> ve <strong>inşaat projelendirme hizmetleri</strong> sunuyoruz.</p>
             
             <div class="areas-grid">
                 <div class="area-item">
                     <h4>Muratpaşa</h4>
-                    <p>İskele & Kalıp Hizmetleri</p>
+                    <p>İskele & Kalıp Sistemleri</p>
                 </div>
                 <div class="area-item">
                     <h4>Kepez</h4>
-                    <p>Masa İskele Sistemleri</p>
+                    <p>Masa İskele Hizmetleri</p>
                 </div>
                 <div class="area-item">
                     <h4>Konyaaltı</h4>
@@ -409,7 +553,7 @@
                 </div>
                 <div class="area-item">
                     <h4>Aksu</h4>
-                    <p>İskele Kiralama</p>
+                    <p>İskele Kiralama & Satış</p>
                 </div>
                 <div class="area-item">
                     <h4>Döşemealtı</h4>
@@ -421,15 +565,15 @@
                 </div>
                 <div class="area-item">
                     <h4>Manavgat</h4>
-                    <p>Kalıp Sistemleri</p>
+                    <p>Kalıp & İskele Sistemleri</p>
                 </div>
                 <div class="area-item">
                     <h4>Alanya</h4>
-                    <p>İskele & Kalıp Satışı</p>
+                    <p>İnşaat Ekipmanları</p>
                 </div>
             </div>
 
-            <p style="margin-top: 2rem;">Antalya bölgesindeki tüm inşaat projeleriniz için <strong>masa iskele kiralama</strong>, <strong>modüler kalıp kiralama ve satış</strong>, <strong>dış cephe iskelesi</strong>, <strong>çatı iskelesi</strong>, <strong>sistem kalıp</strong> ve <strong>iskele projelendirme</strong> hizmetleri için Vecta İnşaat'ı tercih edin.</p>
+            <p style="margin-top: 2.5rem;">Antalya bölgesindeki tüm inşaat projeleriniz için <strong>masa iskele kiralama</strong>, <strong>modüler kalıp kiralama ve satış</strong>, <strong>dış cephe iskelesi</strong>, <strong>çatı iskelesi</strong>, <strong>sistem kalıp</strong> ve <strong>iskele projelendirme</strong> hizmetleri için Vecta İnşaat'ı tercih edin. Hızlı teslimat, profesyonel montaj ve teknik destek garantisi.</p>
         </div>
 
         <div class="working-hours">
@@ -443,7 +587,7 @@
                 <div class="hours-item">
                     <h4>Cumartesi</h4>
                     <p><strong>09:00 - 15:00</strong></p>
-                    <p>Randevulu</p>
+                    <p>Randevulu Hizmet</p>
                 </div>
                 <div class="hours-item">
                     <h4>Acil Durumlar</h4>
@@ -454,18 +598,18 @@
         </div>
 
         <div class="seo-text">
-            <h2>Antalya'da Masa İskele ve Modüler Kalıp Sistemleri</h2>
-            <p>Vecta İnşaat, Antalya'da faaliyet gösteren, <strong>masa iskele sistemleri</strong>, <strong>modüler kalıp sistemleri</strong> ve <strong>mühendislik projelendirme</strong> konusunda uzman bir firmadır. Muratpaşa, Kepez, Konyaaltı, Aksu, Döşemealtı ve Antalya'nın diğer tüm ilçelerinde hizmet vermekteyiz.</p>
+            <h2>Antalya'da Güvenilir İnşaat Çözümleri Firması</h2>
+            <p>Vecta İnşaat, Antalya'da faaliyet gösteren, <strong>masa iskele sistemleri</strong>, <strong>modüler kalıp sistemleri</strong> ve <strong>mühendislik projelendirme</strong> konusunda uzman bir inşaat firmasıdır. Muratpaşa, Kepez, Konyaaltı, Aksu, Döşemealtı, Serik, Manavgat, Alanya ve Antalya'nın diğer tüm ilçelerinde hizmet vermekteyiz.</p>
 
             <p>İnşaat projeleriniz için <strong>masa iskele kiralama</strong>, <strong>masa iskele satışı</strong>, <strong>modüler kalıp kiralama</strong>, <strong>panel kalıp sistemleri</strong>, <strong>sistem kalıp</strong>, <strong>duvar kalıbı</strong>, <strong>kolon kalıbı</strong>, <strong>dış cephe iskelesi</strong>, <strong>çatı iskelesi</strong> ve <strong>iskele montaj</strong> hizmetleri sunuyoruz.</p>
 
-            <p><strong>Antalya iskele firması</strong> arayanlar için ideal çözüm ortağıyız. CE sertifikalı ürünlerimiz, TSE standartlarına uygun üretimimiz ve deneyimli mühendis kadromuz ile <strong>Antalya'da iskele ve kalıp sektöründe</strong> güvenilir bir marka olarak hizmet veriyoruz.</p>
+            <p><strong>Antalya iskele firması</strong> arayanlar için ideal çözüm ortağıyız. CE sertifikalı ürünlerimiz, TSE standartlarına uygun üretimimiz ve deneyimli mühendis kadromuz ile <strong>Antalya inşaat sektöründe</strong> güvenilir bir marka olarak hizmet veriyoruz.</p>
 
             <p>İnşaat şantiyeleriniz için <strong>beton kalıp sistemleri</strong>, <strong>çelik iskele</strong>, <strong>alüminyum iskele</strong>, <strong>tubular iskele</strong> ve diğer tüm iskele-kalıp ihtiyaçlarınızda bizimle iletişime geçebilirsiniz. Kısa ve uzun süreli <strong>iskele kiralama Antalya</strong> hizmetimiz mevcuttur.</p>
 
             <p><strong>Antalya inşaat malzemeleri</strong> tedarikinde, özellikle <strong>masa iskele Antalya</strong>, <strong>modüler kalıp Antalya</strong> ve <strong>projelendirme Antalya</strong> konularında arayışta olanlar için profesyonel çözümler üretiyoruz. Hızlı teslimat, uygun fiyatlar ve kaliteli hizmet anlayışımızla sektörde fark yaratıyoruz.</p>
 
-            <p>İletişim bilgilerimizden bize ulaşabilir, projeleriniz için <strong>ücretsiz keşif</strong> ve <strong>fiyat teklifi</strong> alabilirsiniz. Antalya'da masa iskele, modüler kalıp ve inşaat iskelesi ihtiyaçlarınız için doğru adres: <strong>Vecta İnşaat</strong>.</p>
+            <p>İletişim bilgilerimizden bize ulaşabilir, projeleriniz için <strong>ücretsiz keşif</strong> ve <strong>fiyat teklifi</strong> alabilirsiniz. Antalya'da masa iskele, modüler kalıp ve inşaat iskelesi ihtiyaçlarınız için doğru adres: <strong>Vecta İnşaat</strong>. Sektördeki deneyimimiz ve müşteri memnuniyeti odaklı yaklaşımımızla inşaat projelerinize değer katıyoruz.</p>
         </div>
     </section>
 
@@ -490,15 +634,15 @@
             </div>
             <div class="footer-section">
                 <h3>İletişim</h3>
-                <p>📞 0507 951 42 68</p>
-                <p>✉️ info@vecta.com.tr</p>
+                <p>📞 <a href="tel:+905079514268">0507 951 42 68</a></p>
+                <p>✉️ <a href="mailto:vectainsaat@gmail.com">vectainsaat@gmail.com</a></p>
                 <p>📍 Antalya, Türkiye</p>
-                <p>🌐 www.vecta.com.tr</p>
+                <p>🌐 <a href="https://www.vecta.com.tr">www.vecta.com.tr</a></p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Vecta İnşaat. Tüm hakları saklıdır.</p>
-            <p>Antalya Masa İskele | Modüler Kalıp | İskele Kiralama | Kalıp Sistemleri | Projelendirme</p>
+            <p>Antalya Masa İskele | Modüler Kalıp | İskele Kiralama | Kalıp Sistemleri | Projelendirme | İnşaat Malzemeleri</p>
         </div>
     </footer>
 </body>

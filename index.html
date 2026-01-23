@@ -194,6 +194,66 @@
             background: #ff5722;
         }
 
+        .btn-call {
+            background: transparent;
+            border: 3px solid white;
+            color: white;
+            box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+            animation: pulse-call 2s infinite;
+            font-size: 1.2rem;
+            padding: 1.4rem 3.5rem;
+            margin-top: 1rem;
+        }
+
+        .btn-call:hover {
+            background: white;
+            color: var(--primary-blue);
+            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px);
+        }
+
+        @keyframes pulse-call {
+            0%, 100% { 
+                box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+                border-color: rgba(255, 255, 255, 1);
+            }
+            50% { 
+                box-shadow: 0 5px 35px rgba(255, 255, 255, 0.6);
+                border-color: rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        .stats-bar {
+            background: var(--dark-gray);
+            padding: 3rem 2rem;
+            margin-top: -2px;
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
         .stats-bar {
             background: var(--dark-gray);
             padding: 3rem 2rem;
@@ -532,12 +592,9 @@
                 height: 40px;
             }
 
-            .stats-container {
-                gap: 2rem;
-            }
-
-            .stat-number {
-                font-size: 2.5rem;
+            .btn-call {
+                padding: 1.2rem 2.5rem;
+                font-size: 1.05rem;
             }
         }
     </style>
@@ -611,28 +668,9 @@
             <h1>Antalya'nın Güvenilir İnşaat Çözümleri Firması</h1>
             <p class="tagline">Vecta İnşaat - Kalite ve Güvenin Adresi</p>
             <p>Masa iskele sistemleri, modüler kalıp çözümleri ve profesyonel mühendislik hizmetleriyle inşaat projelerinize değer katıyoruz</p>
-            <a href="hizmetlerimiz.html" class="btn">Hizmetlerimizi Keşfedin</a>
-        </div>
-    </section>
-
-    <section class="stats-bar">
-        <div class="stats-container">
-            <div class="stat-item">
-                <div class="stat-number">500+</div>
-                <div class="stat-label">Tamamlanan Proje</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">15+</div>
-                <div class="stat-label">Yıllık Deneyim</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Müşteri Memnuniyeti</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">7/24</div>
-                <div class="stat-label">Teknik Destek</div>
-            </div>
+            <a href="tel:+905079514268" class="btn btn-call">
+                Hemen Arayın: 0507 951 42 68
+            </a>
         </div>
     </section>
 
